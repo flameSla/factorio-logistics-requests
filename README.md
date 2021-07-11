@@ -1,3 +1,3 @@
-To get the Lua script, run the corresponding cmd script
+To get the Lua script, run the corresponding CMD script
 
-To change the Lua script, you need to change the '*.txt' files, for more information, see the '*.cmd' files
+To change the Lua script, you need to change the TXT files, for more information, see the CMD files

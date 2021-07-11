@@ -1,3 +1,4 @@
+game.player.set_personal_logistic_slot( 45, {max = 5, min = 5, name = "locomotive"})
 game.player.set_personal_logistic_slot( 53, {max = 4294967295, min = 1, name = "spidertron"})
 game.player.set_personal_logistic_slot( 54, {max = 4294967295, min = 1, name = "spidertron-remote"})
 game.player.set_personal_logistic_slot( 62, {max = 50, min = 50, name = "construction-robot"})

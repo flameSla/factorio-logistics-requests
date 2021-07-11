@@ -1,0 +1,5 @@
+game.player.set_personal_logistic_slot( 72, {max = 200, min = 200, name = "red-wire"})
+game.player.set_personal_logistic_slot( 73, {max = 200, min = 200, name = "green-wire"})
+game.player.set_personal_logistic_slot( 74, {max = 50, min = 50, name = "arithmetic-combinator"})
+game.player.set_personal_logistic_slot( 75, {max = 50, min = 50, name = "decider-combinator"})
+game.player.set_personal_logistic_slot( 76, {max = 50, min = 50, name = "constant-combinator"})

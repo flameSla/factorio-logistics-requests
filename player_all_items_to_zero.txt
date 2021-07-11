@@ -1,4 +1,3 @@
--- player_all_items_to_zero.txt
 game.player.set_personal_logistic_slot( 1, {max = 0, min = 0, name = "wooden-chest"})
 game.player.set_personal_logistic_slot( 2, {max = 0, min = 0, name = "iron-chest"})
 game.player.set_personal_logistic_slot( 3, {max = 0, min = 0, name = "steel-chest"})

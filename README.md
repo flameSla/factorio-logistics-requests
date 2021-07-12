@@ -1,3 +1,3 @@
-To get the Lua script, run the corresponding cmd script
+To get the Lua script, run the build.cmd script
 
-To change the Lua script, you need to change the "*.txt" files, for more information, see the "*.cmd" files
+build.cmd searches for all CMD files that start with player_ and spider_ and executes them sequentially. As a result, all Lua scripts are updated.

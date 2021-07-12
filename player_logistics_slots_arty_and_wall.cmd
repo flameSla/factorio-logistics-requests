@@ -1,3 +1,4 @@
+@echo off
 set out=player_logistics_slots_arty_and_wall.lua
 type player_start_of_the_script.txt > %out%
 echo. >> %out%
@@ -12,5 +13,3 @@ echo. >> %out%
 
 type player_a_common_part_for_all_configurations.txt >> %out%
 echo. >> %out%
-
-pause

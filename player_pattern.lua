@@ -205,7 +205,15 @@ game.player.set_personal_logistic_slot( 73, {max = 200, min = 200, name = "green
 game.player.set_personal_logistic_slot( 74, {max = 50, min = 50, name = "arithmetic-combinator"})
 game.player.set_personal_logistic_slot( 75, {max = 50, min = 50, name = "decider-combinator"})
 game.player.set_personal_logistic_slot( 76, {max = 50, min = 50, name = "constant-combinator"})
+game.player.set_personal_logistic_slot( 78, {max = 50, min = 50, name = "programmable-speaker"})
  
+game.player.set_personal_logistic_slot( 61, {max = 50, min = 50, name = "logistic-robot"})
+game.player.set_personal_logistic_slot( 62, {max = 50, min = 50, name = "construction-robot"})
+game.player.set_personal_logistic_slot( 63, {max = 50, min = 50, name = "logistic-chest-active-provider"})
+game.player.set_personal_logistic_slot( 64, {max = 50, min = 50, name = "logistic-chest-passive-provider"})
+game.player.set_personal_logistic_slot( 65, {max = 50, min = 50, name = "logistic-chest-storage"})
+game.player.set_personal_logistic_slot( 66, {max = 50, min = 50, name = "logistic-chest-buffer"})
+game.player.set_personal_logistic_slot( 67, {max = 50, min = 50, name = "logistic-chest-requester"}) 
  
 game.player.set_personal_logistic_slot( 45, {max = 5, min = 5, name = "locomotive"})
 game.player.set_personal_logistic_slot( 53, {max = 4294967295, min = 1, name = "spidertron"})
@@ -235,6 +243,7 @@ game.player.set_personal_logistic_slot( 189, {max = 4294967295, min = 0, name = 
 game.player.set_personal_logistic_slot( 191, {max = 4294967295, min = 0, name = "energy-shield-equipment"})
 game.player.set_personal_logistic_slot( 192, {max = 4294967295, min = 0, name = "energy-shield-mk2-equipment"})
 game.player.set_personal_logistic_slot( 193, {max = 8, min = 8, name = "personal-laser-defense-equipment"})
+game.player.set_personal_logistic_slot( 207, {max = 1, min = 1, name = "artillery-targeting-remote"})
 game.player.set_personal_logistic_slot( 208, {max = 50, min = 50, name = "radar"})
 game.player.set_personal_logistic_slot( 253, {max = 10, min = 10, name = "rocket-fuel"})
  

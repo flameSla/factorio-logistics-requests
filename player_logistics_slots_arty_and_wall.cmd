@@ -5,8 +5,11 @@ echo. >> %out%
 type player_all_items_to_zero.txt >> %out%
 echo. >> %out%
 
-rem type player_request_combinators.txt >> %out%
-rem echo. >> %out%
+type player_request_combinators.txt >> %out%
+echo. >> %out%
+
+type player_logistics_chests.txt >> %out%
+echo. >> %out%
 
 type player_logistics_slots_arty_and_wall.txt >> %out%
 echo. >> %out%

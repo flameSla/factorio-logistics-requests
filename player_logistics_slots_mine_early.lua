@@ -224,7 +224,7 @@ game.player.set_personal_logistic_slot( 19, {max = 50, min = 50, name = "express
 game.player.set_personal_logistic_slot( 23, {max = 0, min = 0, name = "long-handed-inserter"})
 game.player.set_personal_logistic_slot( 24, {max = 0, min = 0, name = "fast-inserter"})
 game.player.set_personal_logistic_slot( 25, {max = 50, min = 50, name = "filter-inserter"})
-game.player.set_personal_logistic_slot( 26, {max = 100, min = 100, name = "stack-inserter"})
+game.player.set_personal_logistic_slot( 26, {max = 200, min = 200, name = "stack-inserter"})
 game.player.set_personal_logistic_slot( 27, {max = 50, min = 50, name = "stack-filter-inserter"})
 game.player.set_personal_logistic_slot( 32, {max = 100, min = 100, name = "medium-electric-pole"})
 game.player.set_personal_logistic_slot( 33, {max = 50, min = 50, name = "big-electric-pole"})
@@ -248,7 +248,7 @@ game.player.set_personal_logistic_slot( 107, {max = 50, min = 50, name = "electr
 game.player.set_personal_logistic_slot( 113, {max = 10, min = 10, name = "assembling-machine-3"})
 game.player.set_personal_logistic_slot( 121, {max = 0, min = 0, name = "beacon"})
 game.player.set_personal_logistic_slot( 122, {max = 600, min = 600, name = "speed-module"})
-game.player.set_personal_logistic_slot( 204, {max = 50, min = 50, name = "laser-turret"})
+game.player.set_personal_logistic_slot( 204, {max = 350, min = 350, name = "laser-turret"})
  
 game.player.set_personal_logistic_slot( 45, {max = 5, min = 5, name = "locomotive"})
 game.player.set_personal_logistic_slot( 53, {max = 4294967295, min = 1, name = "spidertron"})

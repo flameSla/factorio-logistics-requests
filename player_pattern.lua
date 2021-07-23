@@ -247,3 +247,5 @@ game.player.set_personal_logistic_slot( 207, {max = 1, min = 1, name = "artiller
 game.player.set_personal_logistic_slot( 208, {max = 50, min = 50, name = "radar"})
 game.player.set_personal_logistic_slot( 253, {max = 10, min = 10, name = "rocket-fuel"})
  
+game.player.set_personal_logistic_slot( 267, {max = 0, min = 0, name = "space-science-pack"}) 
+ 

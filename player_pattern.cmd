@@ -17,3 +17,6 @@ echo. >> %out%
 
 type player_a_common_part_for_all_configurations.h >> %out%
 echo. >> %out%
+
+echo game.player.set_personal_logistic_slot( 267, {max = 0, min = 0, name = "space-science-pack"}) >> %out%
+echo. >> %out%

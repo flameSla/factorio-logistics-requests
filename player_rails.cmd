@@ -1,5 +1,5 @@
 @echo off
-set out=player_logistics_slots_mine_4stop.lua
+set out=player_rails.lua
 type player_start_of_the_script.h > %out%
 echo. >> %out%
 type player_all_items_to_zero.h >> %out%
@@ -12,11 +12,11 @@ type player_logistics_chests.h >> %out%
 echo. >> %out%
 
 rem specify the file for the desired configuration
-type player_logistics_slots_mine_4stop.cfg >> %out%
+type player_rails.cfg >> %out%
 echo. >> %out%
 
 type player_a_common_part_for_all_configurations.h >> %out%
 echo. >> %out%
 
-echo game.player.set_personal_logistic_slot( 62, {max = 100, min = 100, name = "construction-robot"}) >> %out%
+echo game.player.set_personal_logistic_slot( 87, {max = 40, min = 40, name = "cliff-explosives"}) >> %out%
 echo. >> %out%

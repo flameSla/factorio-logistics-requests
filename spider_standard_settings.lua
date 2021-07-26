@@ -203,7 +203,12 @@ game.player.selected.set_vehicle_logistic_slot( 267, {max = 0, min = 0, name = "
 game.player.selected.set_vehicle_logistic_slot( 33, {max = 100, min = 100, name = "big-electric-pole"})
 game.player.selected.set_vehicle_logistic_slot( 39, {max = 200, min = 200, name = "pipe-to-ground"})
 game.player.selected.set_vehicle_logistic_slot( 41, {max = 2000, min = 2000, name = "rail"})
+game.player.selected.set_vehicle_logistic_slot( 42, {max = 10, min = 10, name = "train-stop"})
+game.player.selected.set_vehicle_logistic_slot( 43, {max = 100, min = 100, name = "rail-signal"})
+game.player.selected.set_vehicle_logistic_slot( 44, {max = 100, min = 100, name = "rail-chain-signal"})
+game.player.selected.set_vehicle_logistic_slot( 68, {max = 10, min = 10, name = "roboport"})
 game.player.selected.set_vehicle_logistic_slot( 86, {max = 3000, min = 3000, name = "landfill"})
+
  
 game.player.selected.set_vehicle_logistic_slot( 62, {max = 50, min = 50, name = "construction-robot"})
 game.player.selected.set_vehicle_logistic_slot( 87, {max = 20, min = 20, name = "cliff-explosives"})

@@ -238,7 +238,7 @@ game.player.set_personal_logistic_slot( 43, {max = 100, min = 100, name = "rail-
 game.player.set_personal_logistic_slot( 44, {max = 50, min = 50, name = "rail-chain-signal"})
 game.player.set_personal_logistic_slot( 45, {max = 5, min = 5, name = "locomotive"})
 game.player.set_personal_logistic_slot( 46, {max = 5, min = 5, name = "cargo-wagon"})
-game.player.set_personal_logistic_slot( 68, {max = 10, min = 10, name = "roboport"})
+game.player.set_personal_logistic_slot( 68, {max = 20, min = 20, name = "roboport"})
 game.player.set_personal_logistic_slot( 86, {max = 1000, min = 1000, name = "landfill"})
 game.player.set_personal_logistic_slot( 102, {max = 50, min = 50, name = "electric-mining-drill"})
 game.player.set_personal_logistic_slot( 103, {max = 20, min = 20, name = "offshore-pump"})

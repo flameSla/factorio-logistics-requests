@@ -200,6 +200,7 @@ game.player.selected.set_vehicle_logistic_slot( 265, {max = 0, min = 0, name = "
 game.player.selected.set_vehicle_logistic_slot( 266, {max = 0, min = 0, name = "utility-science-pack"})
 game.player.selected.set_vehicle_logistic_slot( 267, {max = 0, min = 0, name = "space-science-pack"})
  
+game.player.selected.set_vehicle_logistic_slot( 86, {max = 6000, min = 6000, name = "landfill"}) 
  
 game.player.selected.set_vehicle_logistic_slot( 62, {max = 50, min = 50, name = "construction-robot"})
 game.player.selected.set_vehicle_logistic_slot( 87, {max = 20, min = 20, name = "cliff-explosives"})

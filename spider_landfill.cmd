@@ -6,7 +6,7 @@ type spider_all_items_to_zero.h >> %out%
 echo. >> %out%
 
 rem specify the file for the desired configuration
-rem type ???.cfg >> %out%
+type spider_landfill.cfg >> %out%
 echo. >> %out%
 
 type spider_a_common_part_for_all_configurations.h >> %out%

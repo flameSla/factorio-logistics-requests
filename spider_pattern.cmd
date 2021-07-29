@@ -11,3 +11,6 @@ echo. >> %out%
 
 type spider_a_common_part_for_all_configurations.h >> %out%
 echo. >> %out%
+
+echo game.player.selected.set_vehicle_logistic_slot( 267, {max = 0, min = 0, name = "space-science-pack"}) >> %out%
+echo. >> %out%

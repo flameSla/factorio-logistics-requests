@@ -10,9 +10,9 @@ In general terms:
 
 **Example:**
 
-To get the 'spider_belts.lua' file, you need to execute the 'spider_belts.cmd' file.
+To get the 'spider_belts.lua' file, you need to execute the 'Win\spider_belts.cmd' file.
 
-See the 'spider_belts.cmd' file, it does the following:
+See the 'Win\spider_belts.cmd' file, it does the following:
 
 	spider_belts.lua = 	spider_start_of_the_script.h +
 	

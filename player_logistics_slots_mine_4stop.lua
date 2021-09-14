@@ -277,7 +277,7 @@ game.player.set_personal_logistic_slot( 188, {max = 4294967295, min = 0, name = 
 game.player.set_personal_logistic_slot( 189, {max = 4294967295, min = 0, name = "night-vision-equipment"})
 game.player.set_personal_logistic_slot( 191, {max = 4294967295, min = 0, name = "energy-shield-equipment"})
 game.player.set_personal_logistic_slot( 192, {max = 4294967295, min = 0, name = "energy-shield-mk2-equipment"})
-game.player.set_personal_logistic_slot( 193, {max = 8, min = 8, name = "personal-laser-defense-equipment"})
+game.player.set_personal_logistic_slot( 193, {max = 16, min = 16, name = "personal-laser-defense-equipment"})
 game.player.set_personal_logistic_slot( 207, {max = 1, min = 1, name = "artillery-targeting-remote"})
 game.player.set_personal_logistic_slot( 208, {max = 50, min = 50, name = "radar"})
 game.player.set_personal_logistic_slot( 253, {max = 10, min = 10, name = "rocket-fuel"})

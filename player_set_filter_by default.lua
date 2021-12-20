@@ -11,3 +11,5 @@ game.player.get_main_inventory().set_filter(index, "laser-turret"); index = inde
 game.player.get_main_inventory().set_filter(index, "artillery-targeting-remote"); index = index - 1;
 game.player.get_main_inventory().set_filter(index, "spidertron"); index = index - 1;
 game.player.get_main_inventory().set_filter(index, "spidertron-remote"); index = index - 1;
+game.player.get_main_inventory().set_filter(index, "radar"); index = index - 1;
+game.player.get_main_inventory().set_filter(index, "construction-robot"); index = index - 1;

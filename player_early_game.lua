@@ -214,8 +214,6 @@ game.player.set_personal_logistic_slot( 64, {max = 50, min = 50, name = "logisti
 game.player.set_personal_logistic_slot( 65, {max = 50, min = 50, name = "logistic-chest-storage"})
 game.player.set_personal_logistic_slot( 66, {max = 50, min = 50, name = "logistic-chest-buffer"})
 game.player.set_personal_logistic_slot( 67, {max = 50, min = 50, name = "logistic-chest-requester"}) 
- 
- 
 game.player.set_personal_logistic_slot( 45, {max = 5, min = 5, name = "locomotive"})
 game.player.set_personal_logistic_slot( 53, {max = 4294967295, min = 1, name = "spidertron"})
 game.player.set_personal_logistic_slot( 54, {max = 4294967295, min = 1, name = "spidertron-remote"})
@@ -249,4 +247,5 @@ game.player.set_personal_logistic_slot( 208, {max = 50, min = 50, name = "radar"
 game.player.set_personal_logistic_slot( 253, {max = 10, min = 10, name = "rocket-fuel"})
  
 game.player.set_personal_logistic_slot( 267, {max = 0, min = 0, name = "space-science-pack"}) 
+ 
  

@@ -3,6 +3,7 @@ local inventory = game.player.get_main_inventory();
 for k = 1, #inventory do
 	inventory.set_filter(k, nil);
 end;
+inventory.sort_and_merge();
 
 local index = #inventory
 inventory.set_filter(index, "solar-panel-equipment"); index = index - 1; inventory.sort_and_merge();

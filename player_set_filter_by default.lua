@@ -1,4 +1,11 @@
 /silent-command
+local inventory = game.player.get_main_inventory();
+for k = 1, #inventory do
+	if inventory.set_filter(k, nil )~=nil then
+		
+	end;
+end;
+
 local index = #game.player.get_main_inventory()
 game.player.get_main_inventory().set_filter(index, "solar-panel-equipment"); index = index - 1;
 game.player.get_main_inventory().set_filter(index, "fusion-reactor-equipment"); index = index - 1;

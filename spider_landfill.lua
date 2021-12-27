@@ -1,5 +1,12 @@
 /silent-command
 for k = 1, 1000 do game.player.selected.clear_vehicle_logistic_slot(k) end;
+
+local inventory = game.player.selected.get_inventory(defines.inventory.spider_trunk);
+for k = 1, #inventory do
+	inventory.set_filter(k, nil);
+end;
+local inventory_index = #inventory;
+inventory.sort_and_merge();
  
 game.player.selected.set_vehicle_logistic_slot( 1, {max = 0, min = 0, name = "wooden-chest"})
 game.player.selected.set_vehicle_logistic_slot( 2, {max = 0, min = 0, name = "iron-chest"})
@@ -208,6 +215,13 @@ game.player.selected.set_vehicle_logistic_slot( 91, {max = 100, min = 100, name 
 game.player.selected.set_vehicle_logistic_slot( 153, {max = 80, min = 80, name = "atomic-bomb"})
 game.player.selected.set_vehicle_logistic_slot( 208, {max = 50, min = 50, name = "radar"})
 
- 
+inventory.set_filter(inventory_index, "radar"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "repair-pack"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "cliff-explosives"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "construction-robot"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "atomic-bomb"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "atomic-bomb"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "atomic-bomb"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "atomic-bomb"); inventory_index = inventory_index - 1; inventory.sort_and_merge(); 
 game.player.selected.set_vehicle_logistic_slot( 267, {max = 0, min = 0, name = "space-science-pack"}) 
  

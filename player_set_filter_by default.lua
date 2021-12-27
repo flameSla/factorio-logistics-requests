@@ -1,9 +1,7 @@
 /silent-command
 local inventory = game.player.get_main_inventory();
 for k = 1, #inventory do
-	if inventory.set_filter(k, nil )~=nil then
-		
-	end;
+	inventory.set_filter(k, nil);
 end;
 
 local index = #game.player.get_main_inventory()

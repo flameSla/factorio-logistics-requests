@@ -209,7 +209,17 @@ game.player.selected.set_vehicle_logistic_slot( 267, {max = 0, min = 0, name = "
  
 game.player.selected.set_vehicle_logistic_slot( 34, {max = 100, min = 100, name = "substation"})
 game.player.selected.set_vehicle_logistic_slot( 94, {max = 1500, min = 1500, name = "solar-panel"})
-game.player.selected.set_vehicle_logistic_slot( 95, {max = 1500, min = 1500, name = "accumulator"}) 
+game.player.selected.set_vehicle_logistic_slot( 95, {max = 1500, min = 1500, name = "accumulator"})
+
+for k = 1, 2 do
+    inventory.set_filter(inventory_index, "substation"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+for k = 1, 30 do
+    inventory.set_filter(inventory_index, "solar-panel"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+for k = 1, 30 do
+    inventory.set_filter(inventory_index, "accumulator"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end; 
 game.player.selected.set_vehicle_logistic_slot( 62, {max = 50, min = 50, name = "construction-robot"})
 game.player.selected.set_vehicle_logistic_slot( 87, {max = 20, min = 20, name = "cliff-explosives"})
 game.player.selected.set_vehicle_logistic_slot( 91, {max = 100, min = 100, name = "repair-pack"})

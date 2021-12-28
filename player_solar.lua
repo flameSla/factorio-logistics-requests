@@ -216,18 +216,7 @@ game.player.set_personal_logistic_slot( 66, {max = 50, min = 50, name = "logisti
 game.player.set_personal_logistic_slot( 67, {max = 50, min = 50, name = "logistic-chest-requester"}) 
 game.player.set_personal_logistic_slot( 34, {max = 100, min = 100, name = "substation"})
 game.player.set_personal_logistic_slot( 94, {max = 2000, min = 2000, name = "solar-panel"})
-game.player.set_personal_logistic_slot( 95, {max = 1500, min = 1500, name = "accumulator"})
-
-for k = 1, 2 do
-    inventory.set_filter(inventory_index, "substation"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-end;
-for k = 1, 40 do
-    inventory.set_filter(inventory_index, "solar-panel"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-end;
-for k = 1, 30 do
-    inventory.set_filter(inventory_index, "accumulator"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-end;
- 
+game.player.set_personal_logistic_slot( 95, {max = 1500, min = 1500, name = "accumulator"}) 
 game.player.set_personal_logistic_slot( 45, {max = 5, min = 5, name = "locomotive"})
 game.player.set_personal_logistic_slot( 53, {max = 4294967295, min = 1, name = "spidertron"})
 game.player.set_personal_logistic_slot( 54, {max = 4294967295, min = 1, name = "spidertron-remote"})

@@ -1,38 +1,42 @@
-To get the Lua script, run the build.cmd script
 
-build.cmd searches for all CMD files that start with player_ and spider_ and executes them sequentially. As a result, all Lua scripts are updated.
+**Building**
+
+Run <building.py>
+
+	press 1, press <Enter> :)
 
 **How it works.**
 
 In general terms:
 
-	settings_1.lua = 1.txt + 2.txt + ... + n.txt
+	file_1.lua = 1.txt + 2.txt + ... + n.txt
 
 **Example:**
 
-To get the 'spider_belts.lua' file, you need to execute the 'Win\spider_belts.cmd' file.
+To edit a file <player_logistics_slots_mine_4stop.python.lua> need to:
 
-See the 'Win\spider_belts.cmd' file, it does the following:
-
-	spider_belts.lua = 	spider_start_of_the_script.h +
+1. (optional) edit a file <src\player_start_of_the_script.h>
+2. (optional) edit a file <src\player_all_items_to_zero.h>
+3. (optional) edit a file <src\player_request_combinators.h>
+4. (optional) edit a file <src\player_logistics_chests.h>
+5. edit a file <src\player_logistics_slots_mine_4stop.cfg>
 	
-				spider_all_items_to_zero.h +
-						
-				spider_belts.cfg +
-						
-				spider_a_common_part_for_all_configurations.h
-						
-'*.h' files contain lua commands that are included in all configurations. 
+	the file contains requests for the file <player_logistics_slots_mine_4stop.python.lua>
+6. (optional) edit a file <src\player_a_common_part_for_all_configurations.h>
+7. edit a file <Python\player_logistics_slots_mine_4stop.py>
+	
+	the file contains the build order for the file <player_logistics_slots_mine_4stop.python.lua>
+8. Run **building.py**
+	
+	press 1, press <Enter>
 
-If you change the '*.h' file, the changes will occur in all configurations.
 
-if you change the '*.cfg' file, only the current configuration will change.
+**Attention!!!**
 
-**Problem:** you have 20 slot settings, in 20 Lua files. You have decided that in all configurations you need to order 20 wagons.
+'*.h' files contain lua commands that are included in all *.lua files.
 
-**Bad decision:** you are modifying all 20 Lua files. Somewhere you will definitely make a mistake and very quickly you will get tired of it.
 
-**A good solution:** you use this system and change only 1 file 'player_a_common_part_for_all_configurations.h'. After that, run 'build. cmd' and all your Lua files will be updated without your participation!
+
 
 
 	

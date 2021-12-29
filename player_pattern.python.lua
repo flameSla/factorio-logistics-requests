@@ -17,7 +17,6 @@ inventory.set_filter(inventory_index, "belt-immunity-equipment"); inventory_inde
 inventory.set_filter(inventory_index, "exoskeleton-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 inventory.set_filter(inventory_index, "personal-roboport-mk2-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 inventory.set_filter(inventory_index, "personal-laser-defense-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "laser-turret"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 inventory.set_filter(inventory_index, "artillery-targeting-remote"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 inventory.set_filter(inventory_index, "spidertron"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 inventory.set_filter(inventory_index, "spidertron-remote"); inventory_index = inventory_index - 1; inventory.sort_and_merge();

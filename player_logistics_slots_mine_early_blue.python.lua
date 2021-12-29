@@ -250,11 +250,99 @@ inventory.set_filter(inventory_index, "logistic-chest-storage"); inventory_index
 inventory.set_filter(inventory_index, "logistic-chest-buffer"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 inventory.set_filter(inventory_index, "logistic-chest-requester"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 local comment = "########################################################################################################################"
-s( 86, {max = 6000, min = 6000, name = "landfill"}) 
+s( 1, {max = 100, min = 100, name = "wooden-chest"})
+s( 3, {max = 50, min = 50, name = "steel-chest"})
+s( 4, {max = 50, min = 50, name = "storage-tank"})
+s( 17, {max = 2000, min = 2000, name = "express-transport-belt"})
+s( 18, {max = 200, min = 200, name = "express-underground-belt"})
+s( 19, {max = 50, min = 50, name = "express-splitter"})
+s( 24, {max = 50, min = 50, name = "fast-inserter"})
+s( 25, {max = 50, min = 50, name = "filter-inserter"})
+s( 26, {max = 200, min = 200, name = "stack-inserter"})
+s( 27, {max = 50, min = 50, name = "stack-filter-inserter"})
+s( 32, {max = 100, min = 100, name = "medium-electric-pole"})
+s( 33, {max = 50, min = 50, name = "big-electric-pole"})
+s( 34, {max = 50, min = 50, name = "substation"})
+s( 38, {max = 100, min = 100, name = "pipe"})
+s( 39, {max = 200, min = 200, name = "pipe-to-ground"})
+s( 40, {max = 50, min = 50, name = "pump"})
+s( 41, {max = 1000, min = 1000, name = "rail"})
+s( 42, {max = 20, min = 20, name = "train-stop"})
+s( 43, {max = 100, min = 100, name = "rail-signal"})
+s( 44, {max = 50, min = 50, name = "rail-chain-signal"})
+s( 45, {max = 5, min = 5, name = "locomotive"})
+s( 46, {max = 5, min = 5, name = "cargo-wagon"})
+s( 68, {max = 10, min = 10, name = "roboport"})
+s( 86, {max = 100, min = 100, name = "landfill"})
+s( 91, {max = 100, min = 100, name = "repair-pack"})
+s( 102, {max = 250, min = 250, name = "electric-mining-drill"})
+s( 103, {max = 20, min = 20, name = "offshore-pump"})
+s( 104, {max = 20, min = 20, name = "pumpjack"})
+s( 107, {max = 50, min = 50, name = "electric-furnace"})
+s( 113, {max = 10, min = 10, name = "assembling-machine-3"})
+s( 122, {max = 700, min = 700, name = "speed-module"})
+s( 204, {max = 50, min = 50, name = "laser-turret"})
 
-for k = 1, 60 do
-    inventory.set_filter(inventory_index, "landfill"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+
+
+
+
+
+
+for k = 1, 2 do
+    inventory.set_filter(inventory_index, "wooden-chest"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 end;
+inventory.set_filter(inventory_index, "steel-chest"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "storage-tank"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+for k = 1, 20 do
+    inventory.set_filter(inventory_index, "express-transport-belt"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+for k = 1, 4 do
+    inventory.set_filter(inventory_index, "express-underground-belt"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+inventory.set_filter(inventory_index, "express-splitter"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "fast-inserter"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "filter-inserter"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+for k = 1, 4 do
+    inventory.set_filter(inventory_index, "stack-inserter"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+inventory.set_filter(inventory_index, "stack-filter-inserter"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+for k = 1, 2 do
+    inventory.set_filter(inventory_index, "medium-electric-pole"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+inventory.set_filter(inventory_index, "big-electric-pole"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "substation"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "pipe"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+for k = 1, 4 do
+    inventory.set_filter(inventory_index, "pipe-to-ground"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+inventory.set_filter(inventory_index, "pump"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+for k = 1, 10 do
+    inventory.set_filter(inventory_index, "rail"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+for k = 1, 2 do
+    inventory.set_filter(inventory_index, "train-stop"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+for k = 1, 2 do
+    inventory.set_filter(inventory_index, "rail-signal"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+inventory.set_filter(inventory_index, "rail-chain-signal"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "locomotive"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "cargo-wagon"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "roboport"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "landfill"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "repair-pack"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+for k = 1, 5 do
+    inventory.set_filter(inventory_index, "electric-mining-drill"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+inventory.set_filter(inventory_index, "offshore-pump"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "pumpjack"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "electric-furnace"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+inventory.set_filter(inventory_index, "assembling-machine-3"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+for k = 1, 14 do
+    inventory.set_filter(inventory_index, "speed-module"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+end;
+inventory.set_filter(inventory_index, "laser-turret"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 local comment = "########################################################################################################################"
 s( 45, {max = 5, min = 5, name = "locomotive"})
 s( 53, {max = 4294967295, min = 1, name = "spidertron"})

@@ -28,7 +28,7 @@ To edit a file <player_logistics_slots_mine_4stop.python.lua> need to:
 	the file contains the build order for the file <player_logistics_slots_mine_4stop.python.lua>
 8. Run **building.py**
 	
-	press 1, press <Enter>
+	press 1, press Enter
 
 
 **Attention!!!**

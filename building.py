@@ -9,10 +9,6 @@ sys.path.append( python_folder )
 import copy_file as files
 import logistic_slot_to_inventory_filter as to_filter
 
-##if "%ERRORLEVEL%"=="1" ( win_build.cmd )
-##if "%ERRORLEVEL%"=="2" ( add_player_settings.cmd )
-##if "%ERRORLEVEL%"=="3" ( add_spider_settings.cmd )
-
 print("1 - build")
 print("2 - add player settings")
 print("3 - add spider settings")

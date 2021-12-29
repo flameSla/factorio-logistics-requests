@@ -1,7 +1,0 @@
-game.player.set_personal_logistic_slot( 61, {max = 50, min = 50, name = "logistic-robot"})
-game.player.set_personal_logistic_slot( 62, {max = 50, min = 50, name = "construction-robot"})
-game.player.set_personal_logistic_slot( 63, {max = 50, min = 50, name = "logistic-chest-active-provider"})
-game.player.set_personal_logistic_slot( 64, {max = 50, min = 50, name = "logistic-chest-passive-provider"})
-game.player.set_personal_logistic_slot( 65, {max = 50, min = 50, name = "logistic-chest-storage"})
-game.player.set_personal_logistic_slot( 66, {max = 50, min = 50, name = "logistic-chest-buffer"})
-game.player.set_personal_logistic_slot( 67, {max = 50, min = 50, name = "logistic-chest-requester"})

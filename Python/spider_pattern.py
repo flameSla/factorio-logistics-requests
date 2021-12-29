@@ -1,0 +1,10 @@
+import copy_file as files
+import logistic_slot_to_inventory_filter as to_filter
+
+out='spider_pattern.python.lua'
+
+files.copy_file( out, 'src\spider_start_of_the_script.h')
+#to_filter.slots_to_filter( 'src\spider_a_common_part_for_all_configurations.h', out )
+files.add_to_file( out, 'src\spider_all_items_to_zero.h')
+### files.add_to_file
+files.add_to_file( out, 'src\spider_a_common_part_for_all_configurations.h')

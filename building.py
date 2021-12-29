@@ -50,5 +50,27 @@ elif choise == 2:
                         else:
                             print(line, file=fout)
 elif choise == 3:
-    print("3")
-    
+    # add spider settings
+    name = input("Enter the name of the settings file ( spider_ ):")
+    print("Create:",name)
+    the_file_exists = False
+    for file in os.listdir(src_folder):
+        if fnmatch.fnmatch(file, name + '.cfg'):
+            the_file_exists = True
+    if the_file_exists:
+        print(name," - file exists" )
+    else:
+        # echo. > "..\%name%.cfg"
+        with open( src_folder + '/' + name + '.cfg', "w" ) as fout:
+            print('local comment = "########################################################################################################################"', file=fout)
+        # copy "spider_pattern.cmd" "%name%.1.temp"
+        with open(python_folder + '/spider_pattern.py', "r") as fin:
+                with open( python_folder + '/' + name + '.py', "w" ) as fout:
+                    for line in fin:
+                        line = line.rstrip()
+                        if line == "out='spider_pattern.python.lua'":
+                            print("out='{0}.python.lua'".format(name), file=fout)
+                        elif line == "### files.add_to_file":
+                            print("files.add_to_file_and_set_filters( out, 'src\{0}.cfg')".format(name), file=fout)
+                        else:
+                            print(line, file=fout)    

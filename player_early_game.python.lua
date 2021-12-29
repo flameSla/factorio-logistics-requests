@@ -238,6 +238,7 @@ s( 64, {max = 50, min = 50, name = "logistic-chest-passive-provider"})
 s( 65, {max = 50, min = 50, name = "logistic-chest-storage"})
 s( 66, {max = 50, min = 50, name = "logistic-chest-buffer"})
 s( 67, {max = 50, min = 50, name = "logistic-chest-requester"})
+local comment = "########################################################################################################################"
 s( 45, {max = 5, min = 5, name = "locomotive"})
 s( 53, {max = 4294967295, min = 1, name = "spidertron"})
 s( 54, {max = 4294967295, min = 1, name = "spidertron-remote"})

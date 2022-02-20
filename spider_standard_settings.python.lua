@@ -213,19 +213,19 @@ s( 267, {max = 0, min = 0, name = "space-science-pack"})
 local comment = "########################################################################################################################" 
 game.player.selected.set_vehicle_logistic_slot( 33, {max = 100, min = 100, name = "big-electric-pole"})
 game.player.selected.set_vehicle_logistic_slot( 39, {max = 200, min = 200, name = "pipe-to-ground"})
-game.player.selected.set_vehicle_logistic_slot( 41, {max = 2000, min = 2000, name = "rail"})
+game.player.selected.set_vehicle_logistic_slot( 41, {max = 1000, min = 1000, name = "rail"})
 game.player.selected.set_vehicle_logistic_slot( 42, {max = 10, min = 10, name = "train-stop"})
 game.player.selected.set_vehicle_logistic_slot( 43, {max = 100, min = 100, name = "rail-signal"})
 game.player.selected.set_vehicle_logistic_slot( 44, {max = 100, min = 100, name = "rail-chain-signal"})
 game.player.selected.set_vehicle_logistic_slot( 68, {max = 10, min = 10, name = "roboport"})
-game.player.selected.set_vehicle_logistic_slot( 86, {max = 3000, min = 3000, name = "landfill"})
+game.player.selected.set_vehicle_logistic_slot( 86, {max = 1000, min = 1000, name = "landfill"})
 for k = 1, 2 do
     inventory.set_filter(inventory_index, "big-electric-pole"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 end;
 for k = 1, 4 do
     inventory.set_filter(inventory_index, "pipe-to-ground"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 end;
-for k = 1, 20 do
+for k = 1, 10 do
     inventory.set_filter(inventory_index, "rail"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 end;
 inventory.set_filter(inventory_index, "train-stop"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
@@ -236,7 +236,7 @@ for k = 1, 2 do
     inventory.set_filter(inventory_index, "rail-chain-signal"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 end;
 inventory.set_filter(inventory_index, "roboport"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-for k = 1, 30 do
+for k = 1, 10 do
     inventory.set_filter(inventory_index, "landfill"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
 end;
 local comment = "########################################################################################################################"

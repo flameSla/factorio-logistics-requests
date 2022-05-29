@@ -3,12 +3,12 @@ local comment = "###############################################################
 local s = game.player.selected.set_vehicle_logistic_slot
 for k = 1, 1000 do game.player.selected.clear_vehicle_logistic_slot(k) end;
 
-local inventory = game.player.selected.get_inventory(defines.inventory.spider_trunk);
-for k = 1, #inventory do
-	inventory.set_filter(k, nil);
+local i = game.player.selected.get_inventory(defines.inventory.spider_trunk);
+for k = 1, #i do
+	i.set_filter(k, nil);
 end;
-local inventory_index = #inventory;
-inventory.sort_and_merge();
+local ii = #i;
+i.sort_and_merge();
 
 local comment = "########################################################################################################################"
 s( 1, {max = 0, min = 0, name = "wooden-chest"})
@@ -215,13 +215,13 @@ s( 34, {max = 100, min = 100, name = "substation"})
 s( 94, {max = 1500, min = 1500, name = "solar-panel"})
 s( 95, {max = 1500, min = 1500, name = "accumulator"})
 for k = 1, 2 do
-    inventory.set_filter(inventory_index, "substation"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "substation"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 30 do
-    inventory.set_filter(inventory_index, "solar-panel"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "solar-panel"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 30 do
-    inventory.set_filter(inventory_index, "accumulator"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "accumulator"); ii = ii - 1; i.sort_and_merge();
 end;
 local comment = "########################################################################################################################"
 s( 62, {max = 50, min = 50, name = "construction-robot"})
@@ -230,10 +230,10 @@ s( 91, {max = 100, min = 100, name = "repair-pack"})
 s( 153, {max = 80, min = 80, name = "atomic-bomb"})
 s( 208, {max = 50, min = 50, name = "radar"})
 
-inventory.set_filter(inventory_index, "construction-robot"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "cliff-explosives"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "repair-pack"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "construction-robot"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "cliff-explosives"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "repair-pack"); ii = ii - 1; i.sort_and_merge();
 for k = 1, 4 do
-    inventory.set_filter(inventory_index, "atomic-bomb"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "atomic-bomb"); ii = ii - 1; i.sort_and_merge();
 end;
-inventory.set_filter(inventory_index, "radar"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "radar"); ii = ii - 1; i.sort_and_merge();

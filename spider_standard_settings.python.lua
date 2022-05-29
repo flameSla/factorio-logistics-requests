@@ -3,12 +3,12 @@ local comment = "###############################################################
 local s = game.player.selected.set_vehicle_logistic_slot
 for k = 1, 1000 do game.player.selected.clear_vehicle_logistic_slot(k) end;
 
-local inventory = game.player.selected.get_inventory(defines.inventory.spider_trunk);
-for k = 1, #inventory do
-	inventory.set_filter(k, nil);
+local i = game.player.selected.get_inventory(defines.inventory.spider_trunk);
+for k = 1, #i do
+	i.set_filter(k, nil);
 end;
-local inventory_index = #inventory;
-inventory.sort_and_merge();
+local ii = #i;
+i.sort_and_merge();
 
 local comment = "########################################################################################################################"
 s( 1, {max = 0, min = 0, name = "wooden-chest"})
@@ -220,24 +220,24 @@ game.player.selected.set_vehicle_logistic_slot( 44, {max = 100, min = 100, name 
 game.player.selected.set_vehicle_logistic_slot( 68, {max = 10, min = 10, name = "roboport"})
 game.player.selected.set_vehicle_logistic_slot( 86, {max = 1000, min = 1000, name = "landfill"})
 for k = 1, 2 do
-    inventory.set_filter(inventory_index, "big-electric-pole"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "big-electric-pole"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 4 do
-    inventory.set_filter(inventory_index, "pipe-to-ground"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "pipe-to-ground"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 10 do
-    inventory.set_filter(inventory_index, "rail"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "rail"); ii = ii - 1; i.sort_and_merge();
 end;
-inventory.set_filter(inventory_index, "train-stop"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "train-stop"); ii = ii - 1; i.sort_and_merge();
 for k = 1, 2 do
-    inventory.set_filter(inventory_index, "rail-signal"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "rail-signal"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 2 do
-    inventory.set_filter(inventory_index, "rail-chain-signal"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "rail-chain-signal"); ii = ii - 1; i.sort_and_merge();
 end;
-inventory.set_filter(inventory_index, "roboport"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "roboport"); ii = ii - 1; i.sort_and_merge();
 for k = 1, 10 do
-    inventory.set_filter(inventory_index, "landfill"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "landfill"); ii = ii - 1; i.sort_and_merge();
 end;
 local comment = "########################################################################################################################"
 s( 62, {max = 50, min = 50, name = "construction-robot"})
@@ -246,10 +246,10 @@ s( 91, {max = 100, min = 100, name = "repair-pack"})
 s( 153, {max = 80, min = 80, name = "atomic-bomb"})
 s( 208, {max = 50, min = 50, name = "radar"})
 
-inventory.set_filter(inventory_index, "construction-robot"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "cliff-explosives"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "repair-pack"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "construction-robot"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "cliff-explosives"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "repair-pack"); ii = ii - 1; i.sort_and_merge();
 for k = 1, 4 do
-    inventory.set_filter(inventory_index, "atomic-bomb"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "atomic-bomb"); ii = ii - 1; i.sort_and_merge();
 end;
-inventory.set_filter(inventory_index, "radar"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "radar"); ii = ii - 1; i.sort_and_merge();

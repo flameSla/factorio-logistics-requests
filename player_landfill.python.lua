@@ -3,25 +3,25 @@ local comment = "###############################################################
 local s = game.player.set_personal_logistic_slot
 for k = 1, 1000 do game.player.clear_personal_logistic_slot(k) end;
 
-local inventory = game.player.get_main_inventory();
-for k = 1, #inventory do
-	inventory.set_filter(k, nil);
+local i = game.player.get_main_inventory();
+for k = 1, #i do
+	i.set_filter(k, nil);
 end;
-local inventory_index = #inventory;
-inventory.sort_and_merge();
+local ii = #i;
+i.sort_and_merge();
 
-inventory.set_filter(inventory_index, "solar-panel-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "fusion-reactor-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "battery-mk2-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "belt-immunity-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "exoskeleton-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "personal-roboport-mk2-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "personal-laser-defense-equipment"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "artillery-targeting-remote"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "spidertron"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "spidertron-remote"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "radar"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "construction-robot"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "solar-panel-equipment"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "fusion-reactor-equipment"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "battery-mk2-equipment"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "belt-immunity-equipment"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "exoskeleton-equipment"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "personal-roboport-mk2-equipment"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "personal-laser-defense-equipment"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "artillery-targeting-remote"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "spidertron"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "spidertron-remote"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "radar"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "construction-robot"); ii = ii - 1; i.sort_and_merge();
 local comment = "########################################################################################################################"
 s( 1, {max = 0, min = 0, name = "wooden-chest"})
 s( 2, {max = 0, min = 0, name = "iron-chest"})
@@ -230,12 +230,12 @@ s( 75, {max = 50, min = 50, name = "decider-combinator"})
 s( 76, {max = 50, min = 50, name = "constant-combinator"})
 s( 78, {max = 50, min = 50, name = "programmable-speaker"})
 
-inventory.set_filter(inventory_index, "red-wire"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "green-wire"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "arithmetic-combinator"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "decider-combinator"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "constant-combinator"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "programmable-speaker"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "red-wire"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "green-wire"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "arithmetic-combinator"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "decider-combinator"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "constant-combinator"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "programmable-speaker"); ii = ii - 1; i.sort_and_merge();
 local comment = "########################################################################################################################"
 s( 61, {max = 50, min = 50, name = "logistic-robot"})
 s( 63, {max = 50, min = 50, name = "logistic-chest-active-provider"})
@@ -243,17 +243,17 @@ s( 64, {max = 50, min = 50, name = "logistic-chest-passive-provider"})
 s( 65, {max = 50, min = 50, name = "logistic-chest-storage"})
 s( 66, {max = 50, min = 50, name = "logistic-chest-buffer"})
 s( 67, {max = 50, min = 50, name = "logistic-chest-requester"})
-inventory.set_filter(inventory_index, "logistic-robot"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "logistic-chest-active-provider"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "logistic-chest-passive-provider"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "logistic-chest-storage"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "logistic-chest-buffer"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
-inventory.set_filter(inventory_index, "logistic-chest-requester"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+i.set_filter(ii, "logistic-robot"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "logistic-chest-active-provider"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "logistic-chest-passive-provider"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "logistic-chest-storage"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "logistic-chest-buffer"); ii = ii - 1; i.sort_and_merge();
+i.set_filter(ii, "logistic-chest-requester"); ii = ii - 1; i.sort_and_merge();
 local comment = "########################################################################################################################"
 s( 86, {max = 6000, min = 6000, name = "landfill"}) 
 
 for k = 1, 60 do
-    inventory.set_filter(inventory_index, "landfill"); inventory_index = inventory_index - 1; inventory.sort_and_merge();
+    i.set_filter(ii, "landfill"); ii = ii - 1; i.sort_and_merge();
 end;
 local comment = "########################################################################################################################"
 s( 45, {max = 5, min = 5, name = "locomotive"})

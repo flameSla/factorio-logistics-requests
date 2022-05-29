@@ -25,10 +25,10 @@ def slots_to_filter( cfg_file_name, lua_file_name = None, mode = 'a' ):
             if m != None and m.lastindex == 2:
                 stacks = int( ceil( float( m[1] )/items[ m[2] ] ))
                 if stacks == 1:
-                    print('inventory.set_filter(inventory_index, "{0}"); inventory_index = inventory_index - 1; inventory.sort_and_merge();'.format( m[2] ), file=f)
+                    print('i.set_filter(ii, "{0}"); ii = ii - 1; i.sort_and_merge();'.format( m[2] ), file=f)
                 elif stacks > 1:
                     print('for k = 1, {0} do'.format( stacks ), file=f);
-                    print('    inventory.set_filter(inventory_index, "{0}"); inventory_index = inventory_index - 1; inventory.sort_and_merge();'.format( m[2] ), file=f)
+                    print('    i.set_filter(ii, "{0}"); ii = ii - 1; i.sort_and_merge();'.format( m[2] ), file=f)
                     print('end;', file=f)
     if f != None:
         f.closed

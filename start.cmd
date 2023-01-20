@@ -1,3 +1,3 @@
-Y:\Python38\python.exe building.py
+py building.py
 
 pause

@@ -262,7 +262,7 @@ s( 41, {max = 2000, min = 2000, name = "rail"})
 s( 42, {max = 20, min = 20, name = "train-stop"})
 s( 43, {max = 200, min = 200, name = "rail-signal"})
 s( 44, {max = 200, min = 200, name = "rail-chain-signal"})
-s( 86, {max = 4000, min = 4000, name = "landfill"})
+s( 86, {max = 2000, min = 2000, name = "landfill"})
 
 i.set_filter(ii, "wooden-chest"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "fast-inserter"); ii = ii - 1; i.sort_and_merge();
@@ -286,7 +286,7 @@ end;
 for k = 1, 4 do
     i.set_filter(ii, "rail-chain-signal"); ii = ii - 1; i.sort_and_merge();
 end;
-for k = 1, 40 do
+for k = 1, 20 do
     i.set_filter(ii, "landfill"); ii = ii - 1; i.sort_and_merge();
 end;
 local comment = "########################################################################################################################"

@@ -278,8 +278,6 @@ s( 68, {max = 20, min = 20, name = "roboport"})
 s( 77, {max = 10, min = 10, name = "power-switch"})
 s( 86, {max = 1000, min = 1000, name = "landfill"})
 s( 91, {max = 100, min = 100, name = "repair-pack"})
-s( 94, {max = 200, min = 200, name = "solar-panel"})
-s( 95, {max = 200, min = 200, name = "accumulator"})
 s( 102, {max = 50, min = 50, name = "electric-mining-drill"})
 s( 103, {max = 20, min = 20, name = "offshore-pump"})
 s( 104, {max = 10, min = 10, name = "pumpjack"})
@@ -287,6 +285,7 @@ s( 107, {max = 50, min = 50, name = "electric-furnace"})
 s( 113, {max = 10, min = 10, name = "assembling-machine-3"})
 s( 124, {max = 50, min = 50, name = "speed-module-3"})
 s( 130, {max = 50, min = 50, name = "productivity-module-3"})
+s( 201, {max = 800, min = 800, name = "stone-wall"})
 s( 204, {max = 350, min = 350, name = "laser-turret"})
 
 i.set_filter(ii, "wooden-chest"); ii = ii - 1; i.sort_and_merge();
@@ -335,12 +334,6 @@ for k = 1, 10 do
     i.set_filter(ii, "landfill"); ii = ii - 1; i.sort_and_merge();
 end;
 i.set_filter(ii, "repair-pack"); ii = ii - 1; i.sort_and_merge();
-for k = 1, 4 do
-    i.set_filter(ii, "solar-panel"); ii = ii - 1; i.sort_and_merge();
-end;
-for k = 1, 4 do
-    i.set_filter(ii, "accumulator"); ii = ii - 1; i.sort_and_merge();
-end;
 i.set_filter(ii, "electric-mining-drill"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "offshore-pump"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "pumpjack"); ii = ii - 1; i.sort_and_merge();
@@ -348,6 +341,9 @@ i.set_filter(ii, "electric-furnace"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "assembling-machine-3"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "speed-module-3"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "productivity-module-3"); ii = ii - 1; i.sort_and_merge();
+for k = 1, 8 do
+    i.set_filter(ii, "stone-wall"); ii = ii - 1; i.sort_and_merge();
+end;
 for k = 1, 7 do
     i.set_filter(ii, "laser-turret"); ii = ii - 1; i.sort_and_merge();
 end;

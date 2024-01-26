@@ -324,26 +324,26 @@ end;
 for k = 1, 2 do
     i.set_filter(ii, "laser-turret"); ii = ii - 1; i.sort_and_merge();
 end;
-s( 14, {max = 1000, min = 1000, name = "fast-transport-belt"})
-s( 15, {max = 200, min = 200, name = "fast-underground-belt"})
-s( 16, {max = 100, min = 100, name = "fast-splitter"})
-s( 24, {max = 200, min = 200, name = "fast-inserter"})
+local comment = "########################################################################################################################"
+s( 14, {max = 1000, min = 1000, name = "transport-belt"})
+s( 15, {max = 200, min = 200, name = "underground-belt"})
+s( 16, {max = 100, min = 100, name = "splitter"})
+s( 24, {max = 250, min = 250, name = "fast-inserter"})
 s( 25, {max = 50, min = 50, name = "filter-inserter"})
-s( 26, {max = 50, min = 50, name = "stack-inserter"})
+
 for k = 1, 10 do
-    i.set_filter(ii, "fast-transport-belt"); ii = ii - 1; i.sort_and_merge();
+    i.set_filter(ii, "transport-belt"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 4 do
-    i.set_filter(ii, "fast-underground-belt"); ii = ii - 1; i.sort_and_merge();
+    i.set_filter(ii, "underground-belt"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 2 do
-    i.set_filter(ii, "fast-splitter"); ii = ii - 1; i.sort_and_merge();
+    i.set_filter(ii, "splitter"); ii = ii - 1; i.sort_and_merge();
 end;
-for k = 1, 4 do
+for k = 1, 5 do
     i.set_filter(ii, "fast-inserter"); ii = ii - 1; i.sort_and_merge();
 end;
 i.set_filter(ii, "filter-inserter"); ii = ii - 1; i.sort_and_merge();
-i.set_filter(ii, "stack-inserter"); ii = ii - 1; i.sort_and_merge();
 local comment = "########################################################################################################################"
 s( 45, {max = 5, min = 5, name = "locomotive"})
 s( 53, {max = 4294967295, min = 1, name = "spidertron"})

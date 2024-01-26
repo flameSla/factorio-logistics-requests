@@ -250,10 +250,11 @@ i.set_filter(ii, "logistic-chest-storage"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "logistic-chest-buffer"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "logistic-chest-requester"); ii = ii - 1; i.sort_and_merge();
 local comment = "########################################################################################################################"
-s( 1, {max = 50, min = 50, name = "wooden-chest"})
-s( 3, {max = 100, min = 100, name = "steel-chest"})
+s( 1, {max = 100, min = 100, name = "wooden-chest"})
+s( 3, {max = 50, min = 50, name = "steel-chest"})
 s( 4, {max = 50, min = 50, name = "storage-tank"})
 s( 27, {max = 50, min = 50, name = "stack-filter-inserter"})
+s( 31, {max = 100, min = 100, name = "small-electric-pole"})
 s( 32, {max = 100, min = 100, name = "medium-electric-pole"})
 s( 33, {max = 50, min = 50, name = "big-electric-pole"})
 s( 34, {max = 50, min = 50, name = "substation"})
@@ -269,19 +270,22 @@ s( 46, {max = 5, min = 5, name = "cargo-wagon"})
 s( 68, {max = 10, min = 10, name = "roboport"})
 s( 86, {max = 100, min = 100, name = "landfill"})
 s( 91, {max = 100, min = 100, name = "repair-pack"})
-s( 102, {max = 250, min = 250, name = "electric-mining-drill"})
+s( 102, {max = 200, min = 200, name = "electric-mining-drill"})
 s( 103, {max = 20, min = 20, name = "offshore-pump"})
 s( 104, {max = 20, min = 20, name = "pumpjack"})
 s( 107, {max = 50, min = 50, name = "electric-furnace"})
 s( 113, {max = 10, min = 10, name = "assembling-machine-3"})
-s( 122, {max = 700, min = 700, name = "speed-module"})
-s( 204, {max = 50, min = 50, name = "laser-turret"})
-i.set_filter(ii, "wooden-chest"); ii = ii - 1; i.sort_and_merge();
+s( 122, {max = 600, min = 600, name = "speed-module"})
+s( 204, {max = 100, min = 100, name = "laser-turret"})
 for k = 1, 2 do
-    i.set_filter(ii, "steel-chest"); ii = ii - 1; i.sort_and_merge();
+    i.set_filter(ii, "wooden-chest"); ii = ii - 1; i.sort_and_merge();
 end;
+i.set_filter(ii, "steel-chest"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "storage-tank"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "stack-filter-inserter"); ii = ii - 1; i.sort_and_merge();
+for k = 1, 2 do
+    i.set_filter(ii, "small-electric-pole"); ii = ii - 1; i.sort_and_merge();
+end;
 for k = 1, 2 do
     i.set_filter(ii, "medium-electric-pole"); ii = ii - 1; i.sort_and_merge();
 end;
@@ -307,24 +311,26 @@ i.set_filter(ii, "cargo-wagon"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "roboport"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "landfill"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "repair-pack"); ii = ii - 1; i.sort_and_merge();
-for k = 1, 5 do
+for k = 1, 4 do
     i.set_filter(ii, "electric-mining-drill"); ii = ii - 1; i.sort_and_merge();
 end;
 i.set_filter(ii, "offshore-pump"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "pumpjack"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "electric-furnace"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "assembling-machine-3"); ii = ii - 1; i.sort_and_merge();
-for k = 1, 14 do
+for k = 1, 12 do
     i.set_filter(ii, "speed-module"); ii = ii - 1; i.sort_and_merge();
 end;
-i.set_filter(ii, "laser-turret"); ii = ii - 1; i.sort_and_merge();
-s( 17, {max = 2000, min = 2000, name = "express-transport-belt"})
+for k = 1, 2 do
+    i.set_filter(ii, "laser-turret"); ii = ii - 1; i.sort_and_merge();
+end;
+s( 17, {max = 1000, min = 1000, name = "express-transport-belt"})
 s( 18, {max = 200, min = 200, name = "express-underground-belt"})
 s( 19, {max = 100, min = 100, name = "express-splitter"})
 s( 24, {max = 50, min = 50, name = "fast-inserter"})
 s( 25, {max = 50, min = 50, name = "filter-inserter"})
 s( 26, {max = 200, min = 200, name = "stack-inserter"})
-for k = 1, 20 do
+for k = 1, 10 do
     i.set_filter(ii, "express-transport-belt"); ii = ii - 1; i.sort_and_merge();
 end;
 for k = 1, 4 do

@@ -250,20 +250,20 @@ i.set_filter(ii, "logistic-chest-storage"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "logistic-chest-buffer"); ii = ii - 1; i.sort_and_merge();
 i.set_filter(ii, "logistic-chest-requester"); ii = ii - 1; i.sort_and_merge();
 local comment = "########################################################################################################################"
-s( 34, {max = 22, min = 22, name = "substation"})
+s( 34, {max = 50, min = 50, name = "substation"})
 s( 99, {max = 224, min = 224, name = "steam-turbine"})
-s( 32, {max = 8, min = 8, name = "medium-electric-pole"})
-s( 94, {max = 4, min = 4, name = "solar-panel"})
-s( 103, {max = 12, min = 12, name = "offshore-pump"})
+s( 32, {max = 50, min = 50, name = "medium-electric-pole"})
+s( 94, {max = 50, min = 50, name = "solar-panel"})
+s( 103, {max = 20, min = 20, name = "offshore-pump"})
 s( 98, {max = 112, min = 112, name = "heat-exchanger"})
-s( 38, {max = 12, min = 12, name = "pipe"})
+s( 38, {max = 100, min = 100, name = "pipe"})
 s( 97, {max = 200, min = 200, name = "heat-pipe"})
-s( 68, {max = 2, min = 2, name = "roboport"})
-s( 40, {max = 10, min = 10, name = "pump"})
-s( 39, {max = 4, min = 4, name = "pipe-to-ground"})
+s( 68, {max = 10, min = 10, name = "roboport"})
+s( 40, {max = 50, min = 50, name = "pump"})
+s( 39, {max = 50, min = 50, name = "pipe-to-ground"})
 s( 96, {max = 8, min = 8, name = "nuclear-reactor"})
-s( 26, {max = 16, min = 16, name = "stack-inserter"})
-s( 95, {max = 4, min = 4, name = "accumulator"})
+s( 26, {max = 50, min = 50, name = "stack-inserter"})
+s( 95, {max = 50, min = 50, name = "accumulator"})
 i.set_filter(ii, "substation"); ii = ii - 1; i.sort_and_merge();
 for k = 1, 23 do
     i.set_filter(ii, "steam-turbine"); ii = ii - 1; i.sort_and_merge();
